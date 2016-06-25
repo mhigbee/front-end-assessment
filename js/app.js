@@ -22,7 +22,7 @@ angular.module('assessment', ['ui.router']).config(function ($stateProvider, $ur
             controller: 'MainCtrl'
         })
         .state('product', {
-            url: 'detail/:id',
+            url: 'details/:id',
             templateUrl: '/views/product-details.html',
             controller: 'MainCtrl'
         });

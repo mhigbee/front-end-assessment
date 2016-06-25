@@ -1,4 +1,4 @@
-angular.module('assessment').controller('MainCtrl', function($scope, mainService){
+angular.module('assessment').controller('MainCtrl', function($scope, mainService, $stateParams){
 
     $scope.products = [];
 
@@ -13,5 +13,11 @@ angular.module('assessment').controller('MainCtrl', function($scope, mainService
 
     console.log($scope.products)
 
+    // if ($stateParams.id === 'shoes') {
+    //     $scope.productData = productService.shoeData;
+    // }
+    // else if ($stateParams.id === 'socks') {
+    //     $scope.productData = productService.sockData;
+    // }
     
 });
